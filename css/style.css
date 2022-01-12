@@ -1,0 +1,47 @@
+body header h1
+{
+padding-left: 30%;
+text-emphasis-color: orange;
+}
+
+/**
+ * Entête de la page 
+ */
+ header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px dotted black; /* Applique une bordure en pointillé */
+    padding: 20px;
+}
+
+/**
+ * Permet de trouver une UL dans une NAV dans un HEADER 
+ */
+ header nav ul { /* L'espace représente "dans" ou "à l'intérieur" */
+    display: flex;
+    flex-direction: row;
+    list-style: none; /* Enlève les "points" sur le LI */
+    gap: 20px; /* Séparation entre les éléments */
+}
+
+main
+{
+    width: 130%;
+    di
+    border-right: 2px dotted black; /* Bordure de droite */
+    padding: 20px;
+}
+
+main section
+{
+
+    justify-content: space-around;
+    text-align: justify;
+    padding-left: 50px;
+}
+
+.dog
+{
+    width: 250px;
+    margin-left: 50%;
+}
