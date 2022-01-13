@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
-body 
-{
+body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     margin: 0;
@@ -10,8 +9,7 @@ body
 /**
  * Menu de navigation
  */
-#menu 
-{
+#menu {
     display: flex;
     justify-content: space-between;
     width: 60%;
@@ -19,28 +17,24 @@ body
     padding: 20px 0 20px 0; /* haut droite bas gauche */
 }
 
-.logo 
-{
+.logo {
     font-size: 2rem;
     text-decoration: none;
     color: black;
 }
 
-.logo span 
-{
+.logo span {
     color: orange;
 }
 
-#menu nav ul 
-{
+#menu nav ul {
     display: flex;
     flex-direction: row;
     list-style: none;
     gap: 35px;
 }
 
-#menu nav ul li a 
-{
+#menu nav ul li a {
     text-decoration: none;
     color: #999999;
 }
@@ -49,13 +43,11 @@ body
 /**
  * Titre, slogan et image du chien
  */
-header 
-{
+header {
     background-color: #f8f9fa;
 }
 
-header section 
-{
+header section {
     display:flex;
     justify-content: space-between; /* Centrage horizontal, seulement avec les flexbox */
     width: 60%;
@@ -64,22 +56,98 @@ header section
 }
 
 /* Largeur de l'image contenue dans le header */
-.headerDog 
-{
+.headerDog {
     width: 35%;
 }
 
-.headerTitle h1 
-{
+.headerTitle h1 {
     font-size: 4rem;
     margin: 0; /* Suppression des marges auto. sur la balise heading */
     font-weight: lighter;
 }
 
-.headerTitle p 
-{
+.headerTitle p {
     font-size: 1.3rem;
     margin: 0;
     font-weight: lighter;
     color: #999999;
+}
+
+/**
+ * Partie "main" du site
+ */
+.welcome {
+    text-align: center;
+    width: 30%;
+    margin: 60px auto; /* haut ET bas; droite ET gauche */
+}
+
+.welcome h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.welcome p {
+    margin: 0;
+    font-weight: lighter;
+    color: #999999;
+}
+
+/**
+ * Cards
+ */
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    text-align: right;
+    width: 60%;
+    margin: auto auto 60px auto;
+}
+
+/* Prends tous les enfants en position en position pair */
+.card:nth-child(even) {
+    text-align: left;
+}
+
+.card .card-content {
+    width: 50%;
+}
+
+.card .card-content h3 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.card .card-content p {
+    margin: 15px 0 40px 0;
+    color: #999999;
+}
+
+.card .card-content a {
+    background-color: #a2c0be;
+    color: white;
+    text-decoration: none;
+    padding: 12px 32px;
+    border-radius: 50px;
+}
+
+.card .picture {
+    width: 40%;
+    box-shadow: 10px 10px 0 #a2c0be;
+}
+
+
+/**
+ * Footer
+ */
+footer {
+    background-color: #4a4a4b;
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 50px 0;
 }
